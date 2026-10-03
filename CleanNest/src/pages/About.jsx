@@ -8,18 +8,18 @@ const rules = [
 
 export default function About() {
   return (
-    <div style={{ backgroundColor: '#f1f5f9', minHeight: '80vh', padding: '30px 16px' }}>
-      <div style={{ maxWidth: '960px', margin: '0 auto', backgroundColor: '#ffffff', border: '1px solid #cbd5e1', padding: '24px', borderRadius: '4px' }}>
-        <h3 style={{ margin: '0 0 10px 0', color: '#0f172a' }}>Operating Guidelines & Terms</h3>
-        <p style={{ color: '#475569', fontSize: '0.9rem', lineHeight: '1.6', margin: '0 0 20px 0' }}>
+    <div style={{ backgroundColor: '#f1f5f9', minHeight: '80vh', padding: '40px', width: '100%', boxSizing: 'border-box' }}>
+      <div style={{ width: '100%', backgroundColor: '#ffffff', border: '1px solid #cbd5e1', padding: '32px', borderRadius: '4px', boxSizing: 'border-box' }}>
+        <h3 style={{ margin: '0 0 16px 0', color: '#0f172a', fontSize: '1.5rem' }}>Operating Guidelines & Terms</h3>
+        <p style={{ color: '#475569', fontSize: '1.1rem', lineHeight: '1.6', margin: '0 0 24px 0' }}>
           CleanNest operates as a local utility registry. Technicians work on predefined hourly scopes to avoid disputes over pricing or diagnostic time.
         </p>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
           {rules.map((r, index) => (
-            <div key={index} style={{ padding: '12px', borderLeft: '3px solid #2563eb', backgroundColor: '#f8fafc' }}>
-              <div style={{ fontWeight: 'bold', color: '#0f172a', fontSize: '0.9rem' }}>{r.term}</div>
-              <div style={{ color: '#475569', fontSize: '0.85rem', marginTop: '2px' }}>{r.desc}</div>
+            <div key={index} style={{ padding: '16px', borderLeft: '4px solid #2563eb', backgroundColor: '#f8fafc' }}>
+              <div style={{ fontWeight: 'bold', color: '#0f172a', fontSize: '1.1rem' }}>{r.term}</div>
+              <div style={{ color: '#475569', fontSize: '1rem', marginTop: '6px' }}>{r.desc}</div>
             </div>
           ))}
         </div>
